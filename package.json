@@ -8,7 +8,7 @@
     "example": "examples"
   },
   "dependencies": {
-    "dalek-driver-native": "~0.0.5",
+    "dalek-driver-native": "git+http://github.com/niallo/dalek-driver-native.git#e6da4a647c48577b7c98ab65a11e70b3e47e2978",
     "dalek-reporter-console": "~0.0.6",
     "dalek-browser-phantomjs": "~0.0.3",
     "q": "~1.0.1",
