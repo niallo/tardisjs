@@ -7,20 +7,24 @@
     "test": "test",
     "example": "examples"
   },
+  "bin": {
+    "dalek": "./bin/cmd.js",
+    "tardis": "./bin/cmd.js"
+  },
   "dependencies": {
-    "dalek-reporter-console": "~0.0.6",
+    "async": "~0.9.0",
+    "chai": "~1.9.1",
+    "cheerio": "~0.17.0",
     "dalek-browser-phantomjs": "~0.0.3",
     "dalek-internal-webdriver": "~0.0.3",
-    "q": "~1.0.1",
-    "chai": "~1.9.1",
-    "async": "~0.9.0",
+    "dalek-reporter-console": "~0.0.6",
     "eventemitter2": "~0.4.13",
-    "cheerio": "~0.17.0",
-    "lodash": "~2.4.1",
+    "glob": "~4.0.2",
     "js-yaml": "~3.0.2",
     "json5": "~0.2.0",
-    "coffee-script": "~1.7.1",
-    "glob": "~4.0.2"
+    "lodash": "~2.4.1",
+    "optimist": "^0.6.1",
+    "q": "~1.0.1"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
