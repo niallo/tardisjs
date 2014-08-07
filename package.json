@@ -1,16 +1,16 @@
 {
-  "name": "dalekjs",
-  "version": "0.0.8",
-  "description": "A node based cross browser testing tool",
-  "main": "./lib/dalek.js",
+  "name": "tardisjs",
+  "version": "0.1.0",
+  "description": "A cross browser functional testing tool",
+  "main": "./lib/tardis.js",
   "directories": {
     "test": "test",
     "example": "examples"
   },
   "dependencies": {
-    "dalek-driver-native": "git+http://github.com/niallo/dalek-driver-native.git#2ff34023bff654d311c18717a97f5bbde4623dd3",
     "dalek-reporter-console": "~0.0.6",
     "dalek-browser-phantomjs": "~0.0.3",
+    "dalek-internal-webdriver": "~0.0.3",
     "q": "~1.0.1",
     "chai": "~1.9.1",
     "async": "~0.9.0",
@@ -48,26 +48,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/dalekjs/dalek.git"
+    "url": "http://github.com/niallo/tardisjs.git"
   },
   "bugs": {
-    "url": "https://github.com/dalekjs/dalek/issues"
+    "url": "https://github.com/niallo/tardisjs/issues"
   },
   "keywords": [
-    "dalekjs"
+    "tardisjs"
   ],
   "author": {
-    "name": "Sebastian Golasch",
-    "email": "public@asciidisco.com",
-    "url": "http://asciidisco.com"
+    "name": "Niall O'Higgins"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/dalekjs/dalek/blob/master/LICENSE-MIT"
+      "url": "https://github.com/niallo/tardisjs/blob/master/LICENSE-MIT"
     }
   ],
   "engine": {
-    "node": ">=0.8"
+    "node": ">=0.10"
   }
 }
