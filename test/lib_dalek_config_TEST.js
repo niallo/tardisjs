@@ -63,17 +63,6 @@ describe('dalek-internal-config', function () {
     expect(fileContents.browsers[0].chrome.port).to.equal(6000);
   });
 
-  it('can read & parse a coffee-script file', function () {
-    var config = new Config({}, {tests: []}, {});
-    var fileContents = config.readcoffee(__dirname + '/mock/Dalekfile.coffee');
-    expect(fileContents).to.include.keys('browsers');
-    expect(fileContents.browsers).to.be.an('array');
-    expect(fileContents.browsers[0]).to.be.an('object');
-    expect(fileContents.browsers[0]).to.include.keys('chrome');
-    expect(fileContents.browsers[0].chrome).to.include.keys('port');
-    expect(fileContents.browsers[0].chrome.port).to.equal(6000);
-  });
-
   it('can check the avilability of a config file', function () {
     var config = new Config({}, {tests: []}, {});
     var path = __dirname + '/mock/Dalekfile.coffee';
