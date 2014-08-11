@@ -16,7 +16,7 @@
     "chai": "~1.9.1",
     "cheerio": "~0.17.0",
     "dalek-browser-phantomjs": "~0.0.3",
-    "dalek-internal-webdriver": "~0.0.3",
+    "dalek-internal-webdriver": "git+https://github.com/niallo/dalek-internal-webdriver.git#37b360b1fcce37dc060b4749fb416d29dec1100d",
     "dalek-reporter-console": "~0.0.6",
     "eventemitter2": "~0.4.13",
     "glob": "~4.0.2",
