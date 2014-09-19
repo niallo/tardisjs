@@ -112,6 +112,10 @@ module.exports = function () {
         type : 'boolean',
         desc : 'Disable UTF-8 symbols in the console'
       })
+      .option('allowFlakiness', {
+        type : 'boolean',
+        desc : 'Allow tests marked as flakey to fail'
+      })
       .option('help', {
         alias : 'h',
         desc : 'Show this message'
@@ -154,6 +158,7 @@ module.exports = function () {
       baseUrl: argv.baseUrl,
       noColors: argv.nocolors,
       noSymbols: argv.nosymbols,
+      allowFlakiness: argv.allowFlakiness,
       remote: argv.remote
     });
 
